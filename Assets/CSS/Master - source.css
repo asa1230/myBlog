@@ -1,0 +1,2300 @@
+﻿@import url(Reset.css);
+
+body
+{
+    background: #0D1723;
+    color: #EBEBEB;
+    font-size: 85%;
+}
+
+/*-----  WRAPPER  -----*/
+
+.Wrapper
+{
+    width: 940px;
+    margin: 0 auto;
+}
+
+/*-----  MISC.  -----*/
+
+.wf-loading h1,
+.wf-loading h2,
+.wf-loading h3,
+.wf-loading h4,
+.wf-loading p,
+.wf-loading ul#MainMenu li a,
+.wf-loading .Button,
+.wf-loading .BoxGrid ul li a.Title,
+.wf-loading .BoxGrid ul li span.SubTitle,
+.wf-loading .Footer .Telephone, 
+.wf-loading .Footer .Email,
+.wf-loading .SocialColumn .Tweets li,
+.wf-loading .Textbox,
+.wf-loading .Error, 
+.wf-loading .Success,
+.wf-loading .RelatedTitle,
+.wf-loading .ClientLists ul li,
+.wf-loading .TeamList li:hover .ContactDets a,
+.wf-loading .TeamList li span.JobTitle,
+.wf-loading .Quote
+{
+    opacity:0;
+    filter:alpha(opacity=0);
+}
+
+
+h1, h2, h3, h4
+{
+    font-size: 2.3em;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    font-family: "微软雅黑","myriad-pro-condensed" , Verdana, Sans-Serif;
+    font-weight: 500;
+    padding: 2px 0 50px 0;
+    line-height: 1em;
+}
+
+h2
+{
+    font-size: 2em;
+    font-weight: 600;
+    padding: 2px 0 25px 0;
+}
+
+h3
+{
+    font-size: 1.3em;
+    font-weight: 700;
+    padding: 2px 0 25px 0;
+}
+
+h4
+{
+    font-size: 1.4em;
+    font-weight: 700;
+    padding: 2px 0 25px 0;
+}
+
+h1.IconCalendar
+{
+    background: url(../IMG/IconCalendar.png) no-repeat 0 0;
+    padding-left: 60px;
+}
+
+h1.IconPencil
+{
+    background: url(../IMG/IconPencil.png) no-repeat 0 0;
+    padding-left: 60px;
+}
+
+h1.IconStar
+{
+    background: url(../IMG/IconStar.png) no-repeat 0 0;
+    padding-left: 60px;
+}
+
+h1.HasSubHeader, h2.HasSubHeader
+{
+    padding: 2px 0 0 0 !important;
+    line-height: 1em;
+}
+
+h3.SubHeader
+{
+    color: #8D979D;
+    font-weight: 500;
+    font-style: italic;
+    font-family: "微软雅黑","myriad-pro-condensed" , Verdana, Sans-Serif;
+    line-height: 2em;
+    padding: 2px 0 0 0;
+}
+
+p
+{
+    color: #C8CACE;
+    line-height: 1.6em;
+    font-family: "微软雅黑","myriad-pro-condensed" , Verdana, Sans-Serif;
+}
+
+p a
+{
+    font-weight: bold;
+}
+
+a
+{
+    color: #1EB0FF;
+    text-decoration: none;
+}
+
+a:hover
+{
+    color: #26BAF1;
+}
+
+.Break10
+{
+    clear: both;
+    height: 10px;
+}
+
+.Break13
+{
+    clear: both;
+    height: 13px;
+}
+
+.Break15
+{
+    clear: both;
+    height: 15px;
+}
+
+.Break20
+{
+    clear: both;
+    height: 20px;
+}
+
+.Break40
+{
+    clear: both;
+    height: 40px;
+}
+
+.Break60
+{
+    clear: both;
+    height: 60px;
+}
+
+.Break80
+{
+    clear: both;
+    height: 80px;
+}
+
+.HR
+{
+    clear: both;
+    height: 121px;
+    background: url(../IMG/HR.gif) repeat-x 0 center;
+}
+
+.HR.Small
+{
+    height: 61px;
+}
+
+.HR.Single
+{
+    height: 1px;
+    background: url(../IMG/HR.gif) repeat-x 0 0;
+    line-height: 1px;
+    font-size: 1px;
+}
+
+.Animated
+{
+    transition: all 0.2s linear 0s;
+    -moz-transition: all 0.2s linear 0s;
+    -o-transition: all 0.2s linear 0s;
+    -webkit-transition: all 0.2s linear 0s;
+}
+
+.AnimatedSlow
+{
+    transition: all 0.5s linear 0s;
+    -moz-transition: all 0.5s linear 0s;
+    -o-transition: all 0.5s linear 0s;
+    -webkit-transition: all 0.5s linear 0s;
+}
+
+.White
+{
+    color: #EBEBEB;
+}
+
+/*-----  HEADER  -----*/
+
+#Header
+{
+    height: 70px;
+    position: relative;
+    z-index: 25;
+    background: #0D1723;
+}
+
+.Logo
+{
+    float: left;
+    margin-top: 14px;
+}
+
+ul#MainMenu
+{
+    margin-top: 25px;
+    float: right;
+}
+
+ul#MainMenu li
+{
+    float: left;
+    padding: 0 25px;
+    border-right: 1px solid #303A43;
+    height: 20px;
+}
+
+ul#MainMenu li.Last
+{
+    padding: 0 0 0 25px;
+    border-right: none;
+}
+
+ul#MainMenu li a
+{
+    color: #EBEBEB;
+    position: relative;
+    top: 0;
+    text-decoration: none;
+    font-size: 1.3em;
+    border-bottom: 3px solid transparent;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    font-family: "微软雅黑","myriad-pro-condensed" , Verdana, Sans-Serif;
+    font-weight: 500;
+    font-style: normal;
+    line-height: 35px;
+    position: relative;
+    top: -10px;
+}
+
+ul#MainMenu li a:hover
+{
+    border-bottom: 3px solid #8D979D;
+}
+
+ul#MainMenu li a.Active
+{
+    border-bottom: 3px solid #1EB0FF;
+}
+
+/*-----  HOME SLIDESHOW  -----*/
+
+.HomeSlideshow ul
+{
+    height: 600px !important;
+    width: 100%;
+    position: relative;
+    min-width: 940px !important;
+}
+
+.HomeSlideshow ul li
+{
+    height: 600px !important;
+    width: 100% !important;
+    z-index: 0 !important;
+    position: absolute;
+    min-width: 940px !important;
+    opacity:0;
+    filter:alpha(opacity=0);
+}
+
+.HomeSlideshow ul li.Slide1
+{
+    background: url(../IMG/Slide1.jpg) no-repeat center 0;
+}
+
+.HomeSlideshow ul li.Slide2
+{
+    background: url(../IMG/Slide2.jpg) no-repeat center 0;
+}
+
+.HomeSlideshow ul li.Slide3
+{
+    background: url(../IMG/Slide3.jpg) no-repeat center 0;
+}
+
+.HomeSlideshow ul li.Slide4
+{
+    background: url(../IMG/Slide4.jpg) no-repeat center 0;
+}
+
+.HomeSlideshow ul li.Slide5
+{
+    background: url(../IMG/Slide5.jpg) no-repeat center 0;
+}
+
+.HomeSlideshow ul li a
+{
+    display: block;
+    width: 100%;
+    height: 600px;
+}
+
+.HomeSlideshow ul li.Show
+{
+    z-index: 25 !important;
+}
+
+.HomeSlideshowControls
+{
+    margin-top: -155px;
+    width: 940px;
+    position: relative;
+    z-index: 100 !important;
+    height: 106px;
+    margin-bottom: 20px;
+}
+
+.HomeSlideshowControls ul
+{
+    height: 106px;
+}
+
+.HomeSlideshowControls ul li
+{
+    height: 106px;
+    width: 184px;
+    float: left;
+}
+
+.HomeSlideshowControls ul li.Spacer
+{
+    width: 5px;
+    background: url(../IMG/Spacer.gif) no-repeat 0 0;
+}
+
+.HomeSlideshowControls ul li a
+{
+    display: block;
+    height: 106px;
+    width: 184px;
+    text-align: center;
+    background: #020B12;
+    /*background:#234a72;*/
+    position: relative;
+}
+
+.HomeSlideshowControls ul li a span.Inner
+{
+    background: #06111C;
+    height: 103px;
+    display: block;
+}
+
+.HomeSlideshowControls ul li a span.Inner img
+{
+    margin: 0 auto;
+    padding: 21px 0;
+    opacity: 0.7;
+    filter: alpha(opacity=70);
+    transition: all 0.5s linear 0s;
+    -moz-transition: all 0.5s linear 0s;
+    -o-transition: all 0.5s linear 0s;
+    -webkit-transition: all 0.5s linear 0s;
+}
+
+.HomeSlideshowControls ul li a:hover span.Inner img, .HomeSlideshowControls ul li a.Active span.Inner img
+{
+    opacity: 1;
+    filter: alpha(opacity=100);
+}
+
+.HomeSlideshowControls ul li.First a, .HomeSlideshowControls ul li.First a span.Inner
+{
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    -moz-border-radius-topleft: 3px;
+    -moz-border-radius-bottomleft: 3px;
+    -webkit-top-left-radius: 3px;
+    -webkit-bottom-left-radius: 3px;
+}
+
+.HomeSlideshowControls ul li.Last a, .HomeSlideshowControls ul li.Last a span.Inner
+{
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    -moz-border-radius-topright: 3px;
+    -moz-border-radius-bottomright: 3px;
+    -webkit-top-right-radius: 3px;
+    -webkit-bottom-right-radius: 3px;
+}
+
+.HomeSlideshowControls ul li a.Active
+{
+    background: #0474B2;
+    width: 190px;
+    margin-left: -3px;
+    transition: background 0.5s linear 0s;
+    -moz-transition: background 0.5s linear 0s;
+    -o-transition: background 0.5s linear 0s;
+    -webkit-transition: background 0.5s linear 0s;
+}
+
+.HomeSlideshowControls ul li a span.Inner.Active
+{
+    background: #1EB0FF;
+    transition: background 0.5s linear 0s;
+    -moz-transition: background 0.5s linear 0s;
+    -o-transition: background 0.5s linear 0s;
+    -webkit-transition: background 0.5s linear 0s;
+}
+
+.HomeSlideshowControls ul li.First a.Active
+{
+    width: 187px;
+    margin-left: 0;
+}
+
+.HomeSlideshowControls ul li.First a.Active span.Inner
+{
+    padding-right: 3px;
+}
+
+.HomeSlideshowControls ul li.Last a.Active
+{
+    width: 187px;
+}
+
+.HomeSlideshowControls ul li.Last a.Active span.Inner
+{
+    padding-left: 3px;
+}
+
+.HomeSlideshowControls ul li a span.Arrow
+{
+    opacity: 0;
+    filter: alpha(opacity=0);
+    display: block;
+    width: 19px;
+    height: 8px;
+    background: url(../IMG/SlideshowArrow.png) no-repeat 0 0;
+    position: absolute;
+    margin: -8px 0 0 85px;
+}
+
+.HomeSlideshowControls ul li a span.Arrow.Active
+{
+    opacity: 1;
+    filter: alpha(opacity=100);
+    transition: all 0.5s linear 0s;
+    -moz-transition: all 0.5s linear 0s;
+    -o-transition: all 0.5s linear 0s;
+    -webkit-transition: all 0.5s linear 0s;
+}
+
+/*-----  FEATURE SLIDESHOW  -----*/
+
+.FeatureSlideshow ul
+{
+    height: 420px !important;
+    width: 100%;
+    position: relative;
+    min-width: 940px !important;
+    background:#06121C;
+}
+
+.FeatureSlideshow ul li
+{
+    height: 420px !important;
+    width: 100% !important;
+    z-index: 0 !important;
+    position: absolute;
+    min-width: 940px !important;
+    opacity:0;
+    filter:alpha(opacity=0);
+}
+
+.FeatureSlideshow ul li a
+{
+    display: block;
+    width: 100%;
+    height: 420px;
+}
+
+.FeatureSlideshow ul li.Show
+{
+    z-index: 25 !important;
+}
+
+.FeatureSlideshowControls
+{
+    position:absolute;
+    margin-top:-45px; 
+    z-index:300000;
+    text-align:center;
+    width:100%;
+}
+
+.FeatureSlideshowControls ul
+{
+    display:inline-block;
+    text-align:center;    
+}
+
+.FeatureSlideshowControls ul li
+{
+    display:inline-block;
+    margin:0 5px;
+    width:12px;
+    height:12px;
+}
+
+.FeatureSlideshowControls ul li a
+{
+    display:block;
+    width:12px;
+    height:12px;
+    background:url(../IMG/FeatureBullet.png) no-repeat 0 0;
+}
+
+.FeatureSlideshowControls ul li a.Active
+{
+    background:url(../IMG/FeatureBullet.png) no-repeat 0 -12px;
+}
+
+/*-----  BANNERS  -----*/
+
+.Banner
+{
+    height: 420px;
+    width: 100%;
+    position: relative;
+    min-width: 940px !important;
+    background:#06121C;
+}
+
+/*-----  BUTTON  -----*/
+
+
+.Button
+{
+    display: inline-block;
+    height: 45px;
+    background: url(../IMG/ButtonLeft.png) no-repeat 0 -90px;
+    padding: 0 0 0 3px;
+    line-height: 43px;
+    color: #EBEBEB;
+    text-shadow: 0 1px 1px rgba(0,0,0,0.75);
+    text-decoration: none;
+    font-size: 1.6em;
+    font-weight: 700;
+    font-style: normal;
+    font-family: "微软雅黑","myriad-pro-condensed" , Verdana, Sans-Serif;
+}
+
+.Button span
+{
+    display: inline-block;
+    height: 45px;
+    background: url(../IMG/ButtonRight.png) no-repeat right -90px;
+    padding: 0 3px 0 0;
+    line-height: 43px;
+}
+
+.Button span span
+{
+    background: url(../IMG/Button.png) repeat-x 0 -90px;
+    padding: 0 20px;
+}
+
+.Button:hover, a.Thumb:hover .Button
+{
+    background: url(../IMG/ButtonLeft.png) no-repeat 0 -45px;
+    color: #EBEBEB;
+}
+
+.Button:hover span, a.Thumb:hover .Button span
+{
+    background: url(../IMG/ButtonRight.png) no-repeat right -45px;
+}
+
+.Button:hover span span, a.Thumb:hover .Button span span
+{
+    background: url(../IMG/Button.png) repeat-x 0 -45px;
+}
+
+.Button:active, a.Thumb:active .Button
+{
+    position: relative;
+    top: 2px;
+    background: url(../IMG/ButtonLeft.png) no-repeat 0 0;
+}
+
+.Button:active span, a.Thumb:active .Button span
+{
+    background: url(../IMG/ButtonRight.png) no-repeat right 0;
+}
+
+.Button:active span span, a.Thumb:active .Button span span
+{
+    background: url(../IMG/Button.png) repeat-x 0 0;
+}
+
+.Button.FullWidth, .Button.FullWidth span
+{
+    display: block !important;
+}
+.Button.AlignCenter, .Button.AlignCenter span
+{
+    text-align: center;
+}
+
+/*-----  PRESSED BUTTON  -----*/
+
+.Button.Pressed
+{
+    background: url(../IMG/ButtonLeft.png) no-repeat 0 -135px !important;
+}
+
+.Button.Pressed span
+{
+    background: url(../IMG/ButtonRight.png) no-repeat right -135px !important;
+}
+
+.Button.Pressed span span
+{
+    background: url(../IMG/Button.png) repeat-x 0 -135px !important;
+}
+
+.Button.Pressed span.IconFilters, .Button.Pressed:hover span.IconFilters, .Button.Pressed:active span.IconFilters
+{
+    background: url(../IMG/IconCross.png) no-repeat right center !important;
+}
+
+/*-----  LARGE BUTTON  -----*/
+
+.Button.LargeButton
+{
+    height: 51px;
+    background: url(../IMG/ButtonLargeLeft.png) no-repeat 0 -102px;
+    line-height: 49px;
+    font-size: 2em;
+}
+
+.Button.LargeButton span
+{
+    display: inline-block;
+    height: 51px;
+    background: url(../IMG/ButtonLargeRight.png) no-repeat right -102px;
+    line-height: 49px;
+}
+
+.Button.LargeButton span span
+{
+    background: url(../IMG/ButtonLarge.png) repeat-x 0 -102px;
+}
+
+.Button.LargeButton:hover
+{
+    background: url(../IMG/ButtonLargeLeft.png) no-repeat 0 -51px;
+    color: #EBEBEB;
+}
+
+.Button.LargeButton:hover span
+{
+    background: url(../IMG/ButtonLargeRight.png) no-repeat right -51px;
+}
+
+.Button.LargeButton:hover span span
+{
+    background: url(../IMG/ButtonLarge.png) repeat-x 0 -51px;
+}
+
+.Button.LargeButton:active
+{
+    position: relative;
+    top: 2px;
+    background: url(../IMG/ButtonLargeLeft.png) no-repeat 0 0;
+}
+
+.Button.LargeButton:active span
+{
+    background: url(../IMG/ButtonLargeRight.png) no-repeat right 0;
+}
+
+.Button.LargeButton:active span span
+{
+    background: url(../IMG/ButtonLarge.png) repeat-x 0 0;
+}
+
+/*-----  PLAIN BUTTON  -----*/
+
+.PlainButton, .PlainButton span
+{
+    background: none !important;
+}
+
+/*-----  BUTTON ICONS  -----*/
+
+.Button span.IconArrow, .Button:hover span.IconArrow, .Button:active span.IconArrow
+{
+    background: url(../IMG/IconArrow.png) no-repeat left center !important;
+    padding: 0 0 0 35px;
+    position: relative;
+    left: -8px;
+}
+
+.Button span.IconBack, .Button:hover span.IconBack, .Button:active span.IconBack
+{
+    background: url(../IMG/IconBack.png) no-repeat left center !important;
+    padding: 0 0 0 35px;
+    position: relative;
+    left: -8px;
+}
+
+.Button span.IconAllProjects, .Button:hover span.IconAllProjects, .Button:active span.IconAllProjects
+{
+    background: url(../IMG/IconAllProjects.png) no-repeat left center !important;
+    padding: 0 0 0 35px;
+    position: relative;
+    left: -8px;
+}
+
+.Button.PlainButton span.IconAllProjects, .Button.PlainButton:hover span.IconAllProjects, .Button.PlainButton:active span.IconAllProjects
+{
+    background: url(../IMG/IconAllProjects2.png) no-repeat left center !important;
+}
+
+.Button span.IconCaseStudies, .Button:hover span.IconCaseStudies, .Button:active span.IconCaseStudies
+{
+    background: url(../IMG/IconCaseStudies.png) no-repeat left center !important;
+    padding: 0 0 0 35px;
+    position: relative;
+    left: -8px;
+}
+
+.Button.PlainButton span.IconCaseStudies, .Button.PlainButton:hover span.IconCaseStudies, .Button.PlainButton:active span.IconCaseStudies
+{
+    background: url(../IMG/IconCaseStudies2.png) no-repeat left center !important;
+}
+
+.Button span.IconFilters, .Button:hover span.IconFilters, .Button:active span.IconFilters
+{
+    background: url(../IMG/IconFilters.png) no-repeat right center !important;
+    padding: 0 8px 0 0;
+    position: relative;
+    width: 100%;
+}
+
+.Button span.IconExternal, .Button:hover span.IconExternal, .Button:active span.IconExternal
+{
+    background: url(../IMG/IconExternal.png) no-repeat right center !important;
+    padding: 0 0 0 0;
+    margin-right:-8px;
+   
+}
+
+.Button span.IconExternal
+{
+    width:182px;
+}
+
+/*----- SMALL BUTTON  -----*/
+
+.Button.SmallButton
+{
+    height: 35px;
+    line-height: 35px;
+    font-size: 1.2em;
+    background: url(../IMG/ButtonSmallLeft.png) no-repeat 0 -70px;
+}
+
+.Button.SmallButton span
+{
+    height: 35px;
+    line-height: 35px;
+    background: url(../IMG/ButtonSmallRight.png) no-repeat right -70px;
+}
+
+.Button.SmallButton span span
+{
+    padding: 0 10px;
+    background: url(../IMG/ButtonSmall.png) repeat-x 0 -70px;
+}
+
+.Button.SmallButton:hover
+{
+    background: url(../IMG/ButtonSmallLeft.png) no-repeat 0 -35px;
+}
+
+.Button.SmallButton:hover span
+{
+    background: url(../IMG/ButtonSmallRight.png) no-repeat right -35px;
+}
+
+.Button.SmallButton:hover span span
+{
+    background: url(../IMG/ButtonSmall.png) repeat-x 0 -35px;
+}
+
+.Button.SmallButton:active
+{
+    background: url(../IMG/ButtonSmallLeft.png) no-repeat 0 0;
+}
+
+.Button.SmallButton:active span
+{
+    background: url(../IMG/ButtonSmallRight.png) no-repeat right 0;
+}
+
+.Button.SmallButton:active span span
+{
+    background: url(../IMG/ButtonSmall.png) repeat-x 0 0;
+}
+
+/*-----  BOX GRID  -----*/
+
+.BoxGrid ul li
+{
+    width: 220px;
+    margin-left: 20px;
+    float: left;
+}
+
+.BoxGrid ul li img
+{
+    width: 220px;
+    height:140px;
+}
+
+.BoxGrid ul li.First
+{
+    margin-left: 0;
+}
+
+.BoxGrid ul li a.Thumb
+{
+    margin-bottom: 12px;
+    display: block;
+    height: 140px;
+    width: 220px;
+    overflow: hidden;
+    position: relative;
+}
+
+.BoxGrid ul li a.Thumb span.Overlay
+{
+    display: block;
+    width: 220px;
+    height: 140px;
+    position: absolute;
+    margin-top: -140px;
+    z-index: 600;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    background: #1EB0FF url(../IMG/OverlayCross.png) no-repeat center center;
+}
+
+.BoxGrid ul li a.Thumb span.CaseStudyTab
+{
+    display: block;
+    width: 47px;
+    height: 52px;
+    background: url(../IMG/CaseStudyTab.png) no-repeat 0 0;
+    position: absolute;
+    z-index: 500;
+    margin: -140px 0 0 158px;
+}
+
+.BoxGrid ul li a.Thumb:hover span.Overlay
+{
+    opacity: 100;
+    filter: alpha(opacity=100);
+}
+
+.BoxGrid ul li a.Title
+{
+    color: #EBEBEB;
+    font-size: 1.4em;
+    font-weight: 600;
+    font-family: "微软雅黑","myriad-pro-condensed" , Verdana, Sans-Serif;
+    display: inline-block;
+    line-height: 1.2em;
+}
+
+.BoxGrid ul li a.Title:hover
+{
+    text-decoration: underline;
+}
+
+.BoxGrid ul li span.SubTitle
+{
+    color: #8D979D;
+    font-size: 1em;
+    font-weight: 400;
+    font-style: italic;
+    font-family: "微软雅黑","myriad-pro-condensed" , Verdana, Sans-Serif;
+    display: block;
+    line-height: 1.6em;
+    padding-bottom: 20px;
+}
+
+.BoxGrid ul li p.Overview
+{
+    display: block;
+    padding-right: 10px;
+}
+
+.BoxGrid.Centered a.Title, .BoxGrid.Centered span.SubTitle
+{
+    display: block;
+    text-align: center;
+}
+
+/*-----  LARGE BOX GRID  -----*/
+
+.BoxGrid.BoxGridLarge ul li
+{
+    width: 460px;
+}
+
+.BoxGrid.BoxGridLarge ul li a.Thumb
+{
+    height: 240px;
+    width: 460px;
+}
+
+.BoxGrid.BoxGridLarge ul li a.Thumb span.Overlay
+{
+    width: 460px;
+    height: 238px;
+    margin-top: -480px;
+}
+
+
+.BoxGrid.BoxGridLarge ul li a.Thumb span.Overlay .Inner
+{
+    width: 448px;
+    height: 226px;
+}
+
+.BoxGrid.BoxGridLarge ul li a.Thumb:hover span.Overlay
+{
+    margin-top: -240px;
+}
+
+/*-----  SPACED BOX GRID  -----*/
+
+.BoxGrid.Spaced ul li
+{
+    height: 250px;
+}
+
+/*-----  FOOTER  -----*/
+
+.Footer
+{
+    background: #06121C;
+    border-top: 1px solid #253039;
+    padding-top: 60px;
+}
+
+
+.Footer .Telephone, .Footer .Email
+{
+    text-decoration: none;
+    font-size: 1.8em;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    font-family: "微软雅黑","myriad-pro-condensed" , Verdana, Sans-Serif;   
+    font-weight: 700;
+    font-style: italic;
+    padding: 8px 0 5px 0;
+    display: block;
+    text-align: right;
+}
+
+.Footer .Email
+{
+    padding: 0;
+}
+
+/*-----  SOCIAL  -----*/
+
+.SocialColumn
+{
+    width: 205px;
+    float: left;
+    margin-left: 45px;
+}
+
+.SocialColumn.First
+{
+    margin-left: 0;
+    width: 190px;
+}
+
+.SocialColumn h2
+{
+    position: relative;
+    top: -4px;
+}
+
+.SocialColumn p.Address
+{
+    font-style: italic;
+    font-size: 1em;
+    color: #8D979D;
+}
+
+.SocialIcons
+{
+    padding-left: 3px;
+    height: 38px;
+    padding-top: 2px;
+}
+
+.SocialIcons a
+{
+    display: block;
+    width: 24px;
+    height: 24px;
+    float: left;
+    margin: 7px 20px 0 0;
+}
+
+.SocialIcons a.Facebook
+{
+    background: url(../IMG/SocialIcons.png) no-repeat 0 0;
+    margin-left: 20px;
+}
+
+.SocialIcons a.Facebook:hover
+{
+    background: url(../IMG/SocialIcons.png) no-repeat 0 -24px;
+}
+
+.SocialIcons a.Twitter
+{
+    background: url(../IMG/SocialIcons.png) no-repeat -24px 0;
+}
+
+.SocialIcons a.Twitter:hover
+{
+    background: url(../IMG/SocialIcons.png) no-repeat -24px -24px;
+}
+
+.SocialIcons a.Vimeo
+{
+    background: url(../IMG/SocialIcons.png) no-repeat -48px 0;
+}
+
+.SocialIcons a.Vimeo:hover
+{
+    background: url(../IMG/SocialIcons.png) no-repeat -48px -24px;
+}
+
+.SocialIcons a.Dribble
+{
+    background: url(../IMG/SocialIcons.png) no-repeat -72px 0;
+}
+
+.SocialIcons a.Dribble:hover
+{
+    background: url(../IMG/SocialIcons.png) no-repeat -72px -24px;
+}
+
+.SocialColumn .Tweets li
+{
+    font-family: "微软雅黑","myriad-pro-condensed" , Verdana, Sans-Serif;
+    font-weight: 400;
+    font-style: italic;
+    line-height: 1.6em;
+    font-size: 1em;
+    color: #8D979D;
+    width: 205px;
+    height: 150px;
+}
+
+.SocialColumn .Tweets li a
+{
+    white-space: nowrap;
+    color: #CCC !important;
+}
+
+.SocialColumn .Tweets li a:hover
+{
+    color: #EBEBEB !important;
+}
+
+.SocialColumn .Tweets li span
+{
+    display: block;
+    color: #8D979D;
+    font-size: 1em;
+    margin-bottom: 10px;
+}
+
+.SocialColumn .Tweets li span a
+{
+    color: #1EB0FF !important;
+}
+
+.SocialColumn .Tweets li span a:hover
+{
+    color: #09bcff !important;
+}
+
+.SocialColumn .Tweets li span a.WhiteLink
+{
+    color: #EBEBEB !important;
+}
+
+.SocialColumn .TextboxFrame
+{
+    width:160px;    
+}
+
+/*-----  DARKFRAME  -----*/
+
+.DarkFrame
+{
+    background: #2C2C36;
+    min-height: 38px;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+}
+
+/*-----  FORM CONTROLS  -----*/
+
+.TextboxFrame
+{
+    float: left;
+    line-height: 39px;
+    height: 39px;
+    background: #FFF;
+    box-shadow: inset 0 3px 4px rgba(0,0,0,0.45);
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    padding: 0 15px;
+    margin-top: 2px;
+    
+}
+
+.Textbox
+{
+    width: 100%;
+    line-height: 39px;
+    height: 39px;
+    padding: 0;
+    border: none;
+    background: none;
+    font-family: "微软雅黑","myriad-pro-condensed" , Verdana, Sans-Serif;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 1em;
+    color: #6e858e;
+}
+
+.Textbox.Focus
+{
+    color: #6e858e;
+}
+
+.Error, .Success
+{
+    font-size: 1em;
+    font-style: italic;
+    font-family: "微软雅黑","myriad-pro-condensed" , Verdana, Sans-Serif;
+    color: #8D979D;
+    padding-bottom: 15px;
+}
+
+
+/*-----  FILTERS -----*/
+
+.Filters
+{
+    background: #06121C;
+    border-bottom: 1px solid #253039;
+}
+
+.Filters .ButtonContainer
+{
+    float: right;
+    width: 220px;
+    margin-left: 20px;
+}
+
+.Filters .Title
+{
+    float: left;
+    width: 480px;
+    height: 43px;
+    line-height: 43px;
+}
+
+.Filters .Title h2
+{
+    padding: 0;
+    line-height: 43px;
+}
+
+.Filters .Search
+{
+    width: 220px;
+    height: 45px;
+    float: right;
+    position: relative;
+    top: 2px;
+}
+
+.Filters .Search .TextboxFrame
+{
+    background: #FFF url(../IMG/Search.gif) no-repeat 10px center;
+    padding-left: 45px;
+}
+
+.Filters .Search .Textbox
+{
+    width: 130px;
+    padding-right: 30px;
+}
+
+.Filters .Search .ClearText
+{
+    position: absolute;
+    display: block;
+    width: 19px;
+    height: 20px;
+    background: url(../IMG/ClearText.gif) no-repeat 0 0;
+    margin: -29px 0 0 145px;
+}
+
+.Filters .Search .ClearText:hover
+{
+    background: url(../IMG/ClearText.gif) no-repeat 0 -20px;
+}
+
+/*.Filters .Search .SearchButton
+{
+    float:left;
+    width:100px;
+    margin-left:20px;
+    margin-top:-2px;
+}*/
+
+.FiltersPanel
+{
+    /*padding:40px 0;*/
+    background: #06121C;
+    border-top: 1px solid #06121C;
+    height: 200px;
+    transition: filter 0.3s linear 0.5s, opacity 0.3s linear 0.5s;
+    -moz-transition: filter 0.3s linear 0.5s, opacity 0.3s linear 0.5s;
+    -o-transition: filter 0.3s linear 0.5s, opacity 0.3s linear 0.5s;
+    -webkit-transition: filter 0.3s linear 0.5s, opacity 0.3s linear 0.5s;
+    opacity: 1;
+    filter: alpha(opacity=100);
+}
+
+.FiltersPanel.NoBorder
+{
+    transition: filter 0.3s linear 0s, opacity 0.3s linear 0s;
+    -moz-transition: filter 0.3s linear 0s, opacity 0.3s linear 0s;
+    -o-transition: filter 0.3s linear 0s, opacity 0.3s linear 0s;
+    -webkit-transition: filter 0.3s linear 0s, opacity 0.3s linear 0s;
+    opacity: 0;
+    filter: alpha(opacity=0);
+}
+
+
+
+.FiltersPanel .MainButtons
+{
+    width: 220px;
+    height: 120px;
+    float: left;
+    margin-top: 40px;
+}
+
+.FiltersPanel .ServiceList
+{
+    margin-top: 40px;
+}
+
+.FiltersPanel .ServiceList li
+{
+    margin-left: 20px;
+    width: 220px;
+    float: left;
+    padding-bottom: 5px;
+    font-size: 1.2em;
+}
+
+.FiltersPanel .ServiceList li a
+{
+    color: #EBEBEB;
+}
+
+/*-----  TWO COLUMN  -----*/
+
+.Wrapper.TwoColumn
+{
+    background: url(../IMG/HRVertical.gif) repeat-y 270px 0;
+}
+
+.Wrapper.TwoColumn .LeftFrame
+{
+    float: left;
+    width: 220px;
+}
+
+.Wrapper.TwoColumn .RightFrame
+{
+    float: right;
+    width: 620px;
+}
+
+
+
+/*-----  THREE COLUMN  -----*/
+
+
+.Wrapper.ThreeColumn .Frame1
+{
+    float: left;
+    width: 460px;
+    margin-right:40px;
+}
+
+.Wrapper.ThreeColumn .Frame2
+{
+    float: left;
+    width: 200px;
+    margin-right:40px;
+}
+
+.Wrapper.ThreeColumn .Frame3
+{
+    float: left;
+    width: 200px;
+}
+
+.ThreeColumn ul li span.SubTitle
+{
+    font-weight: 400;
+    font-style: italic;
+    font-family: "微软雅黑","myriad-pro-condensed" , Verdana, Sans-Serif;
+    font-size: 1.2em;
+    position:relative;
+    top: -20px;
+    color: #888;
+}
+
+
+
+/*-----  Project Page  -----*/
+
+.Quote
+{
+    font-style: italic;
+    font-size: 1.3em;
+    font-family: "微软雅黑","myriad-pro-condensed" , Verdana, Sans-Serif;
+    line-height: 1.7em;
+    font-weight: 400;
+    color: #C8CACE;
+}
+
+.QuotedBy
+{
+    font-family: "微软雅黑","myriad-pro-condensed" , Verdana, Sans-Serif;
+    font-weight: 600;
+    font-size: 1.6em;
+}
+
+.Quotee
+{
+    color: #8D979D;
+    font-family: "微软雅黑","myriad-pro-condensed" , Verdana, Sans-Serif;
+    font-style: italic;
+    font-size: 1.2em;
+    line-height: 1.5em;
+}
+
+.TagList li
+{
+    float: left;
+    margin: 0 7px 7px 0;
+    height: 1.8em;
+}
+
+.TagList li a
+{
+    font-family: "微软雅黑","myriad-pro-condensed" , Verdana, Sans-Serif;
+    color: #EBEBEB;
+    background: #1EB0FF;
+    padding: 0 10px;
+    line-height: 1.8em;
+    display: block;
+    height: 1.8em;
+    font-size: 0.9em;
+    font-weight: 700;
+    text-shadow: 0 1px 1px rgba(0,0,0,0.75);
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    white-space: nowrap;
+}
+
+
+.TagList li a:hover
+{
+    background: #32B6FE;
+}
+
+
+.TagList li a:active
+{
+    position: relative;
+    top: 1px;
+}
+
+.Quote .Quotemark
+{
+    background: url(../IMG/Quote.png) no-repeat center;
+    position: absolute;
+    margin-left: -58px;
+    margin-top: 5px;
+    height: 30px;
+    width: 37px;
+}
+
+.RightFrame p
+{
+    line-height: 1.6em;
+    font-size: 1em;
+    padding-bottom: 25px;
+    font-family: "微软雅黑","myriad-pro-condensed" , Verdana, Sans-Serif;
+}
+
+.RelatedTitle
+{
+    font-family: "微软雅黑","myriad-pro-condensed" , Verdana, Sans-Serif;
+    font-weight: 600;
+    font-size: 1.6em;
+    padding: 20px 0 40px 0;
+}
+
+.LeftFrame .HR
+{
+    clear: both;
+    height: 61px;
+    background: url(../IMG/HR.gif) repeat-x 0 center;
+}
+
+
+.LeftFrame .BoxGrid ul li
+{
+    margin-bottom: 35px;
+}
+
+/*-----  LOWER CONTENT  ------*/
+
+.LowerContent
+{
+    background: #E3E6E7;
+    border-top: 1px solid #253039;
+    padding: 40px 0;
+    color: #0C1922;
+}
+
+.LowerContent h1, .LowerContent h2, .LowerContent h3
+{
+    text-shadow: none;
+}
+
+/*-----  ADDITIONAL IMAGES  -----*/
+
+.Wrapper.AdditionalImages
+{
+   width:950px;
+}
+
+.Wrapper.AdditionalImages img
+{
+    margin: 0 auto 40px auto;
+}
+
+.Wrapper.AdditionalImages iframe
+{
+    margin: 0 auto 40px auto;
+    border:1px solid #C2C3C5;
+}
+
+/*------  CLIENTS PAGE  -----*/
+
+.ClientsBanner
+{
+    background: url(../IMG/clientsheader.jpg) no-repeat center 0;
+    height: 578px !important;
+    margin-bottom: -470px;
+    z-index:-1;
+}
+
+.ClientsHeader
+{
+    background: url(../IMG/brandsClientsTitle.png) no-repeat left 0;
+    height: 51px !important;
+    padding-bottom:50px;
+}
+    
+.ClientLists .Column1
+{
+    float: left;
+    width: 172px;
+}
+
+.ClientLists .Column2
+{
+    float: left;
+    width: 172px;
+    padding-left: 22px;
+}
+
+.ClientLists .Column3
+{
+    float: left;
+    width: 172px;
+    padding-left: 22px;
+}
+
+.ClientLists .Column4
+{
+    float: left;
+    width: 172px;
+    padding-left: 22px;
+}
+
+
+.ClientLists .Column5
+{
+    float: left;
+    width: 172px;
+    padding-left: 2px;
+}
+
+
+.ClientLists ul li 
+{
+    font-family: "微软雅黑","myriad-pro-condensed" , Verdana, Sans-Serif;
+    font-weight:500;
+    font-size: 1em;
+    line-height:20px;
+    color: #8c969d;
+}
+
+
+.ClientLists h3
+{
+  margin-bottom:-10px;
+}
+
+
+.ClientGrid .BoxGrid ul li .Border
+{
+    width:218px;
+    height:138px;
+    position:absolute;
+    margin-top:-140px;
+    border-style:solid;
+    border-width:1px;
+    border-color:#253039;
+}
+
+/*------  TEAM PAGE  -----*/
+
+.TeamBanner
+{
+    background: url(../IMG/BannerTeam.jpg) no-repeat center 0;
+    height: 578px !important;
+    overflow:hidden;
+}
+
+.TeamBanner div.Shadow
+{
+    position:absolute;
+    z-index:50;   
+}
+
+.TeamBanner div.Foreground
+{
+    position:absolute;
+    z-index:100;   
+}
+
+.TeamBanner .TeaDark
+{
+    position:absolute;
+    left:50%;
+    width:27px;
+    height:36px;
+    margin :293px 0 0 -760px;
+    z-index:120;
+    background: url(../IMG/Team/teadark.gif) no-repeat 0 0;
+}
+
+.TeamBanner .TeaLight
+{
+    position:absolute;
+    left:50%;
+    width:27px;
+    height:36px;
+    margin :293px 0 0 690px;
+    z-index:120;
+    background: url(../IMG/Team/tealight.gif) no-repeat 0 0;
+}
+
+.TeamBanner .TV
+{
+    position:absolute;
+    left:50%; 
+    width:201px;
+    height:126px;
+    background:url(../IMG/Team/tv.gif) no-repeat 0 0;
+    margin:149px 0 0 -124px;
+    z-index:25;
+}
+
+.TeamBanner .LeeSteve
+{
+    position:absolute;
+    left:50%;
+    width:171px;
+    height:270px;
+    margin :188px 0 0 167px;
+}
+
+.TeamBanner .LeeSteve .Foreground
+{
+    width:171px;
+    height:270px;
+    background: url(../IMG/Team/leesteve.gif) no-repeat 0 0;
+}
+
+.TeamBanner .LeeSteve .Shadow
+{
+    width:191px;
+    height:290px;
+    background: url(../IMG/Team/shadows/leesteve.png) no-repeat 0 0;
+    margin:-10px 0 0 -4px;
+}
+
+.TeamBanner .Shaun
+{
+    position:absolute;
+    left:50%;
+    width:105px;
+    height:240px;
+    margin :218px 0 0 70px;
+    z-index:120;
+}
+
+.TeamBanner .Shaun .Foreground
+{
+    width:105px;
+    height:240px;
+    background: url(../IMG/Team/shaun.gif) no-repeat 0 0;
+    z-index:120;
+}
+
+.TeamBanner .Shaun .Shadow
+{
+    width:125px;
+    height:260px;
+    background: url(../IMG/Team/shadows/shaun.png) no-repeat 0 0;
+    margin:-10px 0 0 -4px;
+    z-index:110;
+}
+
+.TeamBanner .Johnny
+{
+    position:absolute;
+    left:50%;
+    width:99px;
+    height:264px;
+    margin :194px 0 0 -120px;
+}
+
+.TeamBanner .Johnny .Foreground
+{
+    width:99px;
+    height:264px;
+    background: url(../IMG/Team/JR.gif) no-repeat 0 0;
+}
+
+.TeamBanner .Johnny .Shadow
+{
+    width:119px;
+    height:284px;
+    background: url(../IMG/Team/shadows/JR.png) no-repeat 0 0;
+    margin:-10px 0 0 -4px;
+}
+
+.TeamBanner .Sav
+{
+    position:absolute;
+    left:50%;
+    width:87px;
+    height:267px;
+    margin :194px 0 0 -230px;
+}
+
+.TeamBanner .Sav .Foreground
+{
+    width:87px;
+    height:267px;
+    background: url(../IMG/Team/sav.gif) no-repeat 0 0;
+}
+
+.TeamBanner .Sav .Shadow
+{
+    width:107px;
+    height:287px;
+    background: url(../IMG/Team/shadows/sav.png) no-repeat 0 0;
+    margin:-10px 0 0 -4px;
+}
+
+.TeamBanner .Pip
+{
+    position:absolute;
+    left:50%;
+    width:75px;
+    height:252px;
+    margin :204px 0 0 -330px;
+}
+
+.TeamBanner .Pip .Foreground
+{
+    width:75px;
+    height:252px;
+    background: url(../IMG/Team/pip.gif) no-repeat 0 0;
+}
+
+.TeamBanner .Pip .Shadow
+{
+    width:95px;
+    height:272px;
+    background: url(../IMG/Team/shadows/pip.png) no-repeat 0 0;
+    margin:-10px 0 0 -4px;
+}
+
+.TeamBanner .Amac
+{
+    position:absolute;
+    left:50%;
+    width:81px;
+    height:276px;
+    margin :160px 0 0 -455px;
+}
+
+.TeamBanner .Amac .Foreground
+{
+    width:81px;
+    height:276px;
+    background: url(../IMG/Team/amac.gif) no-repeat 0 0;
+}
+
+.TeamBanner .Amac .Shadow
+{
+    width:101px;
+    height:296px;
+    background: url(../IMG/Team/shadows/amac.png) no-repeat 0 0;
+    margin:-10px 0 0 -4px;
+}
+
+.TeamBanner .Paul
+{
+    position:absolute;
+    left:50%;
+    width:87px;
+    height:255px;
+    margin :194px 0 0 -530px;
+}
+
+.TeamBanner .Paul .Foreground
+{
+    width:87px;
+    height:255px;
+    background: url(../IMG/Team/paul.gif) no-repeat 0 0;
+}
+
+.TeamBanner .Paul .Shadow
+{
+    width:107px;
+    height:255px;
+    background: url(../IMG/Team/shadows/paul.png) no-repeat 0 0;
+    margin:-10px 0 0 -4px;
+}
+
+.TeamBanner .Gaz
+{
+    position:absolute;
+    left:50%;
+    width:93px;
+    height:258px;
+    margin :200px 0 0 370px;
+    z-index:120;
+}
+
+.TeamBanner .Gaz .Foreground
+{
+    width:93px;
+    height:258px;
+    background: url(../IMG/Team/gaz.gif) no-repeat 0 0;
+}
+
+.TeamBanner .Gaz .Shadow
+{
+    width:113px;
+    height:278px;
+    background: url(../IMG/Team/shadows/gaz.png) no-repeat 0 0;
+    margin:-10px 0 0 -4px;
+}
+
+.TeamBanner .James
+{
+    position:absolute;
+    left:50%;
+    width:93px;
+    height:280px;
+    margin :170px 0 0 440px;
+}
+
+.TeamBanner .James .Foreground
+{
+    width:93px;
+    height:280px;
+    background: url(../IMG/Team/James.gif) no-repeat 0 0;
+}
+
+.TeamBanner .James .Shadow
+{
+    width:113px;
+    height:300px;
+    background: url(../IMG/Team/shadows/James.png) no-repeat 0 0;
+    margin:-10px 0 0 -4px;
+}
+
+.TeamBanner .Mouse
+{
+    position:absolute;
+    left:50%;
+    width:1920px;
+    height:60px;
+    margin :518px 0 0 -960px;
+    background: url(../IMG/Team/mouse2.gif) no-repeat 0 0;
+}
+
+
+
+
+
+
+.TeamTooltip
+{
+    width: 279px;
+    height: 93px;
+    background: url(../IMG/TeamTooltip.png) no-repeat 0 0;
+    position: relative;
+    top: -10px;
+    left: -30px;
+}
+
+.TeamList li
+{
+    width: 220px;
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    height: 390px;
+    border-radius: 4px;
+    box-shadow: 0 3px 0 #E3E6E7;
+}
+
+.TeamList li.Last
+{
+    margin-right: 0;
+}
+
+.TeamList li img
+{
+    padding: 22px 50px;
+}
+
+.TeamList li .ContactDets
+{
+    opacity: 0;
+    filter: alpha(opacity=0);
+    position: absolute;
+    width: 220px;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.TeamList li:hover .ContactDets a
+{
+    color: #EBEBEB;
+    font-size: 1.6em;
+    font-weight: 700;
+    font-family: "微软雅黑","myriad-pro-condensed" , Verdana, Sans-Serif;
+    line-height: 1.6em;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+
+.TeamList li:hover .ContactDets a:hover
+{
+    border-bottom: 2px solid #EBEBEB;
+}
+
+.TeamList li:hover .ContactDets span.Spacer
+{
+    height: 18px;
+    display: inline-block;
+    background: url(../IMG/TeamSpacer.gif) no-repeat center 0;
+    width: 1px;
+    padding: 0 20px;
+}
+
+.TeamList li .PersonDets
+{
+    opacity: 1;
+    filter: alpha(opacity=100);
+    position: absolute;
+    width: 220px;
+}
+
+.TeamList li:hover
+{
+    background: #1EB0FF;
+    box-shadow: 0 3px 0 #3A7596;
+}
+
+.TeamList li:hover .PersonDets
+{
+    opacity: 0;
+    filter: alpha(opacity=0);
+}
+
+.TeamList li:hover .ContactDets
+{
+    opacity: 1;
+    filter: alpha(opacity=100);
+}
+
+.TeamList li h3
+{
+    text-align: center;
+    padding: 5px 0;
+}
+
+.TeamList li span.JobTitle
+{
+    color: #8D979D;
+    font-family: "微软雅黑","myriad-pro-condensed" , Verdana, Sans-Serif;
+    font-style: italic;
+    font-size: 1.2em;
+    display: block;
+    text-align: center;
+}
+
+/*-----  CONTACT PAGE  -----*/
+
+.ContactBanner
+{
+    background: url(../IMG/BannerContact.jpg) no-repeat center 0;
+    height: 500px !important;
+}
+
+.ContactBanner .Rocket
+{
+    width: 154px;
+    height: 199px;
+    background: url(../IMG/Rocket.png) no-repeat 0 0;
+    position: absolute;
+    left: 50%;
+    margin-top: -20px;
+    margin-left: -78px;
+    z-index: 50;
+}
+
+.ContactBanner .ContactColumn
+{
+    width: 220px;
+    padding-top: 35px;
+}
+
+.ContactBanner .ContactColumn h2
+{
+    padding: 0;
+    padding-bottom: 15px;
+}
+
+.ContactBanner .ContactColumn .HR
+{
+    height: 41px;
+}
+
+.ContactBanner .ContactColumn p.Telephone
+{
+    color: #EBEBEB;
+    font-size: 1.2em;
+    font-weight: 700;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.ContactBanner .ContactColumn p.Address
+{
+    color: #EBEBEB;
+    font-size: 1.1em;
+    font-weight: 700;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    padding-bottom: 15px;
+}
+
+.ContactBanner .ContactColumn p.Email
+{
+    font-size: 1.2em;
+    font-weight: 700;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.ContactBanner .SocialIcons
+{
+    position: relative;
+    left: -28px;
+    top: -5px;
+}
+
+
+/*-----  STATS AREA  -----*/
+
+.StatsArea
+{
+    margin: 0 50px;
+}
+
+.StatsPrevArrow
+{
+    display: block;
+    width: 30px;
+    height: 45px;
+    background: url(../IMG/StatsArrows.png) no-repeat 0 0;
+    position: absolute;
+    margin: 57px 0 0 0;
+}
+
+.StatsPrevArrow:hover
+{
+    background: url(../IMG/StatsArrows.png) no-repeat 0 -45px;
+}
+
+.StatsPrevArrow:active
+{
+    margin: 58px 0 0 0;
+}
+
+.StatsNextArrow
+{
+    display: block;
+    width: 30px;
+    height: 45px;
+    background: url(../IMG/StatsArrows.png) no-repeat -30px 0;
+    position: absolute;
+    margin: 57px 0 0 910px;
+}
+
+.StatsNextArrow:hover
+{
+    background: url(../IMG/StatsArrows.png) no-repeat -30px -45px;
+}
+
+.StatsNextArrow:active
+{
+    margin: 58px 0 0 910px;
+}
+
+.StatsArea ul
+{
+    width: 840px;
+    height: 160px;
+    overflow: hidden;
+}
+
+.StatsArea ul li
+{
+    width: 420px;
+    height: 160px;
+    float: left;
+}
+
+
+/*-----  NEWS PAGE  -----*/
+
+.NewsBanner
+{
+    background: url(../IMG/clientsheader.jpg) no-repeat center 0;
+    height: 578px !important;
+    margin-bottom: -470px;
+    z-index:-1;
+}
+
+.NewsHeader
+{
+    background: url(../IMG/newsTitle.png) no-repeat left 0;
+    height: 51px !important;
+    padding-bottom:50px;
+}
+
+.NewsList .HR
+{
+    height: 31px;
+    background-position:left top;  
+}
+
+.NewsList p
+{
+    padding:0 0 20px 0;
+}
+
+.NewsList li:last-child .HR
+{
+    display:none;
+}
+
+.NewsList h2 a
+{
+    color:#EBEBEB;    
+}
+
+.NewsList h2 a:hover
+{
+    text-decoration:underline;
+}
+
+.TwitterGraphic
+{
+    height:99px;
+    background:url(../IMG/Twitter.png) no-repeat center 0;
+    position:relative;
+    top:-15px;
+    left:-10px; 
+    margin-bottom:20px;   
+}
+
+.TwitterFeed li
+{
+    font-family: "微软雅黑","myriad-pro-condensed" , Verdana, Sans-Serif;
+    font-weight: 400;
+    font-style: italic;
+    line-height: 1.6em;
+    font-size: 1em;
+    color: #8D979D;
+    width: 205px;
+}
+
+.TwitterFeed li:first-child .HR
+{
+    display:none !important;
+}
+
+.TwitterFeed li a
+{
+    white-space: nowrap;
+    color: #CCC !important;
+}
+
+.TwitterFeed li span
+{
+    display: block;
+    color: #8D979D;
+    font-size: 1em;
+    margin-bottom: 10px;
+}
+
+.TwitterFeed li span a
+{
+    color: #1EB0FF !important;
+}
+
+.TwitterFeed li span a:hover
+{
+    color: #09bcff !important;
+}
+
+.TwitterFeed li span a.WhiteLink
+{
+    color: #EBEBEB !important;
+}
+
+
+.Share a
+{
+    padding:0 !important; 
+    margin-right:18px; 
+    height:21px !important;
+    overflow:hidden; 
+    display:inline-block;
+}
+
+.Share a.addthis_button_facebook_like,
+.Share a.addthis_button_tweet
+{
+    margin-right:0; 
+}
+
+.Share a.addthis_button_email,
+.Share a.addthis_button_email span
+{
+    width:21px;
+    background:url(../IMG/ShareIcons.png) no-repeat 0 0;   
+}
+
+.Share a.addthis_button_twitter,
+.Share a.addthis_button_twitter span
+{
+    width:21px;
+    background:url(../IMG/ShareIcons.png) no-repeat -21px 0;   
+}
+
+.Share a.addthis_button_tumblr,
+.Share a.addthis_button_tumblr span
+{
+    width:21px;
+    background:url(../IMG/ShareIcons.png) no-repeat -42px 0;   
+}
+
+.Share a.addthis_button_google_plusone,
+.Share a.addthis_button_google_plusone span
+{
+    width:32px;
+    background:url(../IMG/ShareIcons.png) no-repeat -63px 0;   
+}
+
+.Share a.addthis_button_pinterest_pinit,
+.Share a.addthis_button_pinterest_pinit span
+{
+    width:43px;
+    background:url(../IMG/ShareIcons.png) no-repeat -95px 0;   
+    position:relative;
+    top:0;
+     margin-right:18px; 
+}
+
+.Share a.addthis_button_email span,
+.Share a.addthis_button_twitter span,
+.Share a.addthis_button_tumblr span,
+.Share a.addthis_button_google_plusone span,
+.Share a.addthis_button_pinterest_pinit span
+{
+    display:none;   
+}
+
+.Share .addthis_toolbox
+{
+    position:relative;
+    top:3px;
+    left:20px;    
+}

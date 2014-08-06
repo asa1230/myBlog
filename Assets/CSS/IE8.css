@@ -1,0 +1,26 @@
+﻿
+
+.FeatureSlideshowControls
+{
+    left:50%;
+    text-align:center;
+    float:left;
+    width:400px;
+}
+
+.FeatureSlideshowControls ul
+{
+    display:block;
+
+}
+
+.FeatureSlideshowControls ul li
+{
+    display:block;
+    float:left;
+}
+
+.SocialColumn .Tweets
+{
+    position:relative;    
+}
