@@ -24,3 +24,32 @@
 	"friends"  : [
 	] 
 }
+
+{
+    "docs"      : ["posts"],
+    "template"    : "default",
+    "domain_alias" :  ["www.t-design.cn"],    
+    "perpage"   : 10,
+    "order"  : "number",
+    "types"     : {
+        "\\.(md||markdown)$"   : "markdown", 
+        "\\.(js||css||json)$"  : "code",
+        "\\.html?$"            : "html",
+        ".*"                   : "text"        
+    },
+    "title"  : "第一个博客",
+    "description" : "欢迎来到我的博客...",
+    "comment"  : {"type":"disqus", "short_name":"gitpress"},
+    "friends"  : [
+        {
+          "name"  : "github",
+          "title"  : "github",
+          "url"  : "http://github.com"          
+        },
+        {
+          "name"  : "gitpress",
+          "title"  : "gitpress",
+          "url"  : "http://gitpress.org"
+        }
+    ] 
+}
