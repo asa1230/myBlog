@@ -1,0 +1,775 @@
+/*
+ * HTML5 Boilerplate
+ *
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+	 Base styles: opinionated defaults
+	 ========================================================================== */
+
+html,
+button,
+input,
+select,
+textarea {
+		color: #222;
+}
+
+body {
+		font-size: 1em;
+		line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight: h5bp.com/i
+ * These selection declarations have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+		background: #b3d4fc;
+		text-shadow: none;
+}
+
+::selection {
+		background: #b3d4fc;
+		text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+		display: block;
+		height: 1px;
+		border: 0;
+		border-top: 1px solid #ccc;
+		margin: 1em 0;
+		padding: 0;
+}
+
+/*
+ * Remove the gap between images and the bottom of their containers: h5bp.com/i/440
+ */
+
+img {
+		vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+		border: 0;
+		margin: 0;
+		padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+		resize: vertical;
+}
+
+/* ==========================================================================
+	 Chrome Frame prompt
+	 ========================================================================== */
+
+.chromeframe {
+		margin: 0.2em 0;
+		background: #ccc;
+		color: #000;
+		padding: 0.2em 0;
+}
+
+/* ==========================================================================
+	 Author's custom styles
+	 ========================================================================== */
+
+/*
+		INDEX
+
+		
+		$1 GENERAL
+		$2 LAYOUT
+		$3 HEADER
+		$4 FOOTER
+		$5 SECTIONS
+		
+
+		$X MQ
+
+*/
+
+/* $1 GENERAL */
+	body{
+		background:#f7f7f7;
+		font:62.5% 'myriad-pro', 'Myriad Pro', arial, sans-serif;
+		color:#000;
+		}
+	a{text-decoration:none;}
+	a:hover{}
+	.btn{
+		-webkit-box-shadow: 0 2px 0  rgba(0,0,0,0.26);
+		-moz-box-shadow: 0 2px 0  rgba(0,0,0,0.26);
+		-ms-box-shadow: 0 2px 0  rgba(0,0,0,0.26);
+		box-shadow: 0 2px 0  rgba(0,0,0,0.26);
+		border-radius:4px;
+		color:#fff;
+		display:inline-block;
+		font-size:2em;
+		font-family: 'myriad-pro-semi-condensed','Myriad Pro', arial, sans-serif;
+		font-weight: normal;
+		line-height:40px;
+		text-shadow: 0px 1px 1px rgba(0,0,0,0.4);
+		text-transform:uppercase;
+		padding:0 25px;
+		position:relative;
+		}
+	b, strong {font-weight: 600;}
+
+
+/* $2 LAYOUT */
+	#lang{
+		background:#000;
+		font-size:1.2em;
+		}
+	#lang ul{
+		list-style:none;
+		margin:0;
+		padding:.5em 0;
+		text-align:right;}
+	#lang li{display:inline;}
+
+	#lang .sel{display:none;}
+	#lang a{
+		background:#191919;
+		border-radius:2px;
+		display:inline-block;
+		color:#999;
+		line-height:1.6em;
+		margin-left:.5em;
+		padding:0 1.5em;
+		text-transform:uppercase;
+		}
+	#lang a.jp {font-size: 1em;}
+	body .jp,
+	body .es{display:none;}
+	body .jp{font-size:.85em;}
+	.jp #main h2.title{font-size:3em;}
+
+/* $3 HEADER */
+	#header{
+		background: url(../image/bg-main-view.jpg) center center no-repeat #0b101d;
+		font-family: 'myriad-pro','Myriad Pro', arial, sans-serif;
+		}
+	#header .wrapper{position:relative;}
+	#header .title{
+		text-shadow: 0 2px 4px  rgba(0,0,0,0.44);
+		color:#fff;
+		font-size:4.5em;
+		font-style: italic;
+		font-weight: 900;
+		margin:0 0 0 5px;
+		}
+	.jp #header .title{font-size:8em;}
+	#header .motto{
+		color:#b2c8ff;
+		font-size:1.8em;
+		font-weight: 300;
+		margin:-10px 0 40px 5px;
+		}
+	#header .motto,
+	#header .abstract{text-shadow: 0 2px 2px  rgba(0,0,0,0.66);}
+	#header .abstract{
+		color:#5e7ac0;
+		font-size:1.8em;
+		line-height:27px;
+		margin:0 0 50px 10px;
+		}
+	#header .abstract em{font-style:normal;}
+	#header .abstract strong{
+		color:#b2c8ff;
+		font-weight: normal;
+		}
+	#header .motto,
+	#header .abstract,
+	#header .download{margin-left:10px;}
+	#header .download ul, #header .donate ul{
+		list-style:none;
+		margin:0;
+		padding:0;
+		}
+/*	#header .donate li { float:left; margin-left: 0; margin-right: 10px;}
+	#header .donate li a {padding: 0 10px 0 10px;}
+	#header .donate .tutorial{height:24px; font-size: 1.4em; line-height: 28px; }*/
+	
+	#header .download li{float:left;}
+	#header .download .btn{margin-bottom:15px;}
+	#header .download .btn.plugin{
+		background:#79a816;
+		background-image: linear-gradient(top, #bfda4a 0%, #79a816 100%);
+		background-image: -o-linear-gradient(top, #bfda4a 0%, #79a816 100%);
+		background-image: -moz-linear-gradient(top, #bfda4a 0%, #79a816 100%);
+		background-image: -webkit-linear-gradient(top, #bfda4a 0%, #79a816 100%);
+		background-image: -ms-linear-gradient(top, #bfda4a 0%, #79a816 100%);
+		margin-right:20px;
+		padding-left:0px;
+		padding-right:60px;
+		}
+	#header .download .btn.plugin:after{
+		background-image: url(download.png);
+		content:'';
+		height:22px;
+		position:absolute;
+		right:30px;
+		top:10px;
+		width:18px;
+		}
+	#header .download .btn.plugin:hover{background:#79a816;}
+	#header .download .btn .free{
+		background:#186f02;
+		background-image: linear-gradient(top, #8cc208 0%, #186f02 100%);
+		background-image: -o-linear-gradient(top, #8cc208 0%, #186f02 100%);
+		background-image: -moz-linear-gradient(top, #8cc208 0%, #186f02 100%);
+		background-image: -webkit-linear-gradient(top, #8cc208 0%, #186f02 100%);
+		background-image: -ms-linear-gradient(top, #8cc208 0%, #186f02 100%);
+		border-radius:4px 0 0 4px;
+		float:left;
+		margin-right:15px;
+		padding:0 15px;
+		}
+	#header .download .btn .version{
+		bottom:45px;
+		color:#7ba917;
+		/*font-family:'Myriad Pro', arial, sans-serif;*/
+		font-size:.7em;
+		/*font-weight: normal;*/
+		/*line-height:100%;*/
+		position:absolute;
+		right:72px;
+		text-shadow:none;
+		text-transform:lowercase;
+		white-space:nowrap;
+		}
+	#header .download .btn.sample, #header .donate .btn.tutorial {
+		background:#c26003;
+		background-image: linear-gradient(top, #ffba11 0%, #c26003 100%);
+		background-image: -o-linear-gradient(top, #ffba11 0%, #c26003 100%);
+		background-image: -moz-linear-gradient(top, #ffba11 0%, #c26003 100%);
+		background-image: -webkit-linear-gradient(top, #ffba11 0%, #c26003 100%);
+		background-image: -ms-linear-gradient(top, #ffba11 0%, #c26003 100%);
+		}
+	#header .download .btn.sample:hover, #header .donate .btn.tutorial:hover {background:#df6d00;}
+	#header .share{padding:0 0 15px;}
+	#header .share .btn{
+		-webkit-box-shadow: 0 1px 0 rgba(0,0,0,.75);
+		-moz-box-shadow: 0 1px 0 rgba(0,0,0,.75);
+		-ms-box-shadow: 0 1px 0  rgba(0,0,0,.75);
+		box-shadow: 0 1px 0 rgba(0,0,0,.75);
+		-webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,0.3);
+		-moz-box-shadow: inset 0 1px 0 rgba(255,255,255,0.3);
+		-ms-box-shadow: inset 0 1px 0 rgba(255,255,255,0.3);
+		box-shadow: inset 0 1px 0 rgba(255,255,255,0.3);
+		height:0px;
+		overflow:hidden;
+		margin-left:10px;
+		padding:24px 0 0;
+		}
+	#header .donate{
+		position: absolute;
+		bottom: 12px;
+		margin-left: 10px;
+		}
+	#header .donate #donate-image{
+		-webkit-box-shadow: 0 1px 0 rgba(0,0,0,.75);
+		-moz-box-shadow: 0 1px 0 rgba(0,0,0,.75);
+		-ms-box-shadow: 0 1px 0  rgba(0,0,0,.75);
+		box-shadow: 0 1px 0 rgba(0,0,0,.75);
+		-webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,0.3);
+		-moz-box-shadow: inset 0 1px 0 rgba(255,255,255,0.3);
+		-ms-box-shadow: inset 0 1px 0 rgba(255,255,255,0.3);
+		box-shadow: inset 0 1px 0 rgba(255,255,255,0.3);
+		border-radius: 4px;
+		
+		}
+/*	#header .share .btn.gplus{
+		background:url(layout/v1/btn-gplus.png);
+		width:40px;
+		}
+	#header .share .btn.twitter{
+		background:url(layout/v1/btn-twitter.gif);
+		width:90px
+		}
+*/
+
+/* $4 FOOTER */
+/*	#footer{
+		background:#000;
+		font-size:2em;
+		line-height:50px;
+		text-align:center;
+		}
+	#footer p{
+		background:url(layout/v1/logo-daniel-peruho.png) left center no-repeat;
+		display:inline-block;
+		margin:0;
+		padding-left:55px;
+		}
+	#footer, #footer a{color:#e5e5e5;}
+*/
+/* $5 SECTIONS */
+/*	#dribbble{
+		background:#000;
+		font-size:2em;
+		line-height:50px;
+		text-align:center;
+		}
+	#dribbble span {
+		font-size: 1.2em;
+		vertical-align: bottom;
+		margin-right: 5px;
+		color:#ea4c89;
+	}
+	#dribbble p{
+		display:inline-block;
+		margin:0;
+		padding-left:55px;
+		}
+	#dribbble, #dribbble a{color:#e5e5e5;}
+	#dribbble, #dribbble a:hover span{color:#fff;}*/
+	
+	#main{padding-top:60px;}
+	#main .features{
+		margin:0 0 60px 10px;
+		padding-top:220px;
+		}
+	#main .boost-workflow{background:url(layout/v1/ui/workflow-mini.png) left top no-repeat;}
+	#main .forget-slices{background:url(layout/v1/ui/slices-mini.png) left top no-repeat;}
+	#main .export-easily{background:url(layout/v1/ui/button-status-mini.png) left top no-repeat;}
+	#main .one-design{background:url(layout/v1/ui/resolution-mini.png) left top no-repeat;}
+	#main .features .title{
+		color:#000;
+		font-family: 'myriad-pro','Myriad Pro', arial, sans-serif;
+		font-size:3.2em;
+		font-style: normal;
+		font-weight: 600;
+		margin:0 0 20px;
+		}
+	#main .features p{
+		color:#000;
+		font-family: 'myriad-pro','Myriad Pro', arial, sans-serif;
+		font-size:1.6em;
+		font-style: normal;
+		font-weight: 300;
+		margin:0 0 10px;
+		}
+	#main .simple-rules{
+		background:url(layout/v1/bg-rules.gif);
+		color:#ccc;
+		font-family: 'myriad-pro','Myriad Pro', arial, sans-serif;
+		font-size:1.6em;
+		font-weight: 300;
+		}
+	#main .simple-rules .wrapper{padding:60px 0 50px;}
+	#main .simple-rules .title{
+		color:#fff;
+		font-size:2em;
+		font-weight:600;
+		margin:0 0 20px 10px;
+		text-shadow:0 2px 2px rgba(0,0,0,.7);
+		}
+	#main .simple-rules .rules{
+		line-height:130%;
+		list-style:none;
+		margin:0 0 0 10px;
+		padding:0;
+		}
+	#main .simple-rules .rules > li{
+		margin-bottom:25px;
+		padding-left:50px;
+		position:relative;
+		}
+	#main .simple-rules .rules > li:after{
+		background:url(layout/v1/ico/rules.png) left top no-repeat;
+		content:'';
+		height:29px;
+		left:-6px;
+		position:absolute;
+		top:-2px;
+		width:43px;
+		}
+	#main .simple-rules .rules > li.group:after{background-position:left top;}
+	#main .simple-rules .rules > li.at:after{background-position:left -29px;}
+	#main .simple-rules .rules > li.hash:after{background-position:left -58px;}
+	#main .simple-rules .rules > li.button:after{background-position:left -87px;}
+	#main .simple-rules li{text-shadow:0 1px 1px #000;}
+	#main .simple-rules strong{color:#fff;}
+
+	#main .simple-rules .rules ul{
+		list-style:none;
+		margin:.5em 0 0;
+		padding:0;
+		}
+	#main .simple-rules .rules ul li:before{content:'- ';}
+
+	#extra{
+		font-family: 'myriad-pro','Myriad Pro', arial, sans-serif;
+		padding-top:60px;
+		}
+	#extra .title{
+		font-size:2.4em;
+		font-weight:600;
+		margin:0 0 20px;
+		}
+	#extra p{
+		font-size:1.6em;
+		font-weight:300;
+		margin: 0 0 10px;
+		}
+
+	#extra .suggest-ideas,
+	#extra .coffee{margin:0 0 50px 10px;}
+	#extra .coffee .crossed{text-decoration: line-through;}
+	#extra .btns{
+		clear:both;
+		margin-bottom:50px;
+		text-align:center;
+		}
+	#extra .btns .btn{
+		background:#0072aa;
+		background-image: linear-gradient(top, #00b1e2 0%, #0072aa 100%);
+		background-image: -o-linear-gradient(top, #00b1e2 0%, #0072aa 100%);
+		background-image: -moz-linear-gradient(top, #00b1e2 0%, #0072aa 100%);
+		background-image: -webkit-linear-gradient(top, #00b1e2 0%, #0072aa 100%);
+		background-image: -ms-linear-gradient(top, #00b1e2 0%, #0072aa 100%);
+		padding:0 55px 0 90px;
+		}
+	#extra .btns .btn:after{
+		background-image:url(layout/v1/ico/email.png);
+		content:'';
+		height:19px;
+		left:53px;
+		position:absolute;
+		
+		top:12px;
+		width:25px;
+		}
+	#extra .btns .btn:hover{background:#0072aa;}
+	#extra .faq{
+		background:#eaeaea;
+		border:1px solid #ccc;
+		border-width:1px 0;
+		margin-bottom:60px;
+		padding:30px 0 0;
+		}
+	#extra .faq .wrapper > .title{
+		font-size:3.2em;
+		margin: 0 0 15px 10px;
+		}
+	#extra .faqs{
+		list-style:none;
+		margin:0 0 0 10px;
+		padding:0;
+		}
+	#extra .faqs li{margin-bottom:50px;}
+	#extra .faq li .title{font-size:1.8em;}
+	#extra .faq li .title,
+	#extra .faq li p{margin:0 0 5px;}
+		
+
+/* $X MQ */
+@media only screen and (min-width: 420px) {
+	#header .title{font-size:6.8em;}
+}
+@media only screen and (min-width: 768px) {
+	.wrapper{
+		margin:0 auto;
+		max-width:750px;
+		}
+	#header .wrapper{
+		background:#fff;
+		height:600px;
+		}
+	#header .wrapper{
+    font-weight: 400;
+    font-style: italic;
+    font-family: "微软雅黑","myriad-pro-condensed" , Verdana, Sans-Serif;
+    font-size: 1.2em;
+    position:relative;
+    top: -20px;
+    color: #888;
+	}
+	#header .title{padding-top:90px;}
+	#header .abstract{margin:0 41% 50px 10px;}
+	#header .download .btn{margin-bottom:0px;}
+	#header .download .btn .version{bottom:-20px;}
+	#header .share{
+		bottom:12px;
+		padding:0;
+		position:absolute;
+		right:5px;
+		}
+	#main .features{
+		background-position:right top;
+		min-height:265px;
+		padding-right:48.958333333%;
+		padding-top:0px;
+		}
+	#main .features:nth-child(even){
+		background-position:left top;
+		padding:0 0 0 47.916666667%;
+		}
+	#main .simple-rules .wrapper{position:relative;}
+	#main .simple-rules .description{margin-right:56%;}
+	#main .simple-rules .description:after{
+		background:url(layout/v1/ui/rules-mini.png) left top no-repeat;
+		content:'';
+		height:400px;
+		position:absolute;
+		right:0px;
+		top:60px;
+		width:400px;
+		}
+	#extra .suggest-ideas,
+	#extra .coffee,
+	#extra .faqs li{
+		float:left;
+		margin:0 0 50px 0;
+		padding-right:4.166666667%;
+		width:44.375%;
+		}
+	#extra .suggest-ideas{margin-left:10px;}
+	}
+
+@media only screen and (min-width: 1024px) {
+	.wrapper{
+		margin:0 auto;
+		max-width:960px;
+		}
+	#header .wrapper{background:url(../image/plugin.png) right 15px no-repeat;}
+	#header .abstract{margin:0 50% 50px 10px;}
+	#header .abstract em{font-style:italic;}
+	#main .boost-workflow{background-image:url(../image/workflow.png);}
+	#main .forget-slices{background-image:url(../image/slices.png);}
+	#main .export-easily{background-image:url(../image/button-status.png);}
+	#main .one-design{background-image:url(../image/resolution.png);}
+	#main .simple-rules .description:after{
+		background-image:url(../image/rules.png);
+		content:'';
+		height:465px;
+		position:absolute;
+		right:-60px;
+		top:60px;
+		width:465px;
+		}
+	#extra .suggest-ideas,
+	#extra .coffee,
+	#extra .faqs li{
+		padding-right:6.25%;
+		width:41.666666667%;
+		}
+}
+@media only screen and (min-width: 1025px) {}
+
+
+
+
+
+
+
+
+/* ==========================================================================
+	 Helper classes
+	 ========================================================================== */
+
+/*
+ * Image replacement
+ */
+
+.ir {
+		background-color: transparent;
+		border: 0;
+		overflow: hidden;
+		/* IE 6/7 fallback */
+		*text-indent: -9999px;
+}
+
+.ir:before {
+		content: "";
+		display: block;
+		width: 0;
+		height: 100%;
+}
+
+/*
+ * Hide from both screenreaders and browsers: h5bp.com/u
+ */
+
+.hidden {
+		display: none !important;
+		visibility: hidden;
+}
+
+/*
+ * Hide only visually, but have it available for screenreaders: h5bp.com/v
+ */
+
+.visuallyhidden {
+		border: 0;
+		clip: rect(0 0 0 0);
+		height: 1px;
+		margin: -1px;
+		overflow: hidden;
+		padding: 0;
+		position: absolute;
+		width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element to be focusable
+ * when navigated to via the keyboard: h5bp.com/p
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+		clip: auto;
+		height: auto;
+		margin: 0;
+		overflow: visible;
+		position: static;
+		width: auto;
+}
+
+/*
+ * Hide visually and from screenreaders, but maintain layout
+ */
+
+.invisible {
+		visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+		content: " "; /* 1 */
+		display: table; /* 2 */
+}
+
+.clearfix:after {
+		clear: both;
+}
+
+/*
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+
+.clearfix {
+		*zoom: 1;
+}
+
+/* ==========================================================================
+	 EXAMPLE Media Queries for Responsive Design.
+	 Theses examples override the primary ('mobile first') styles.
+	 Modify as content requires.
+	 ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+		/* Style adjustments for viewports that meet the condition */
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+			 only screen and (min-resolution: 144dpi) {
+		/* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+	 Print styles.
+	 Inlined to avoid required HTTP connection: h5bp.com/r
+	 ========================================================================== */
+
+@media print {
+		* {
+				background: transparent !important;
+				color: #000 !important; /* Black prints faster: h5bp.com/s */
+				box-shadow:none !important;
+				text-shadow: none !important;
+		}
+
+		a,
+		a:visited {
+				text-decoration: underline;
+		}
+
+		a[href]:after {
+				content: " (" attr(href) ")";
+		}
+
+		abbr[title]:after {
+				content: " (" attr(title) ")";
+		}
+
+		/*
+		 * Don't show links for images, or javascript/internal links
+		 */
+
+		.ir a:after,
+		a[href^="javascript:"]:after,
+		a[href^="#"]:after {
+				content: "";
+		}
+
+		pre,
+		blockquote {
+				border: 1px solid #999;
+				page-break-inside: avoid;
+		}
+
+		thead {
+				display: table-header-group; /* h5bp.com/t */
+		}
+
+		tr,
+		img {
+				page-break-inside: avoid;
+		}
+
+		img {
+				max-width: 100% !important;
+		}
+
+		@page {
+				margin: 0.5cm;
+		}
+
+		p,
+		h2,
+		h3 {
+				orphans: 3;
+				widows: 3;
+		}
+
+		h2,
+		h3 {
+				page-break-after: avoid;
+		}
+}
