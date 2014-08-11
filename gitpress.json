@@ -1,3 +1,4 @@
 {
-    "docs"      : ["index.html", "docs"],        
+    "docs"      : ["index.html", "docs"],  
+    "template"    : "tactile",
 }
