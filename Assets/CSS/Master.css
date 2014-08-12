@@ -240,14 +240,14 @@ ul#MainMenu
 ul#MainMenu li
 {
     float: left;
-    padding: 0 25px;
+    padding: 0 40px;
     border-right: 1px solid #ebebeb;
     height: 20px;
 }
 
 ul#MainMenu li.Last
 {
-    padding: 0 0 0 25px;
+    padding: 0 0 0 40px;
     border-right: none;
 }
 
